@@ -123,7 +123,7 @@ def build_xfoil_commands(
 ) -> str:
     cmds = [
         "PLOP", "G", "",
-        f"LOAD {clean_dat.resolve()}", "",
+        f"LOAD {clean_dat}", "",
         "PANE",
         "OPER",
         f"VISC {re}",

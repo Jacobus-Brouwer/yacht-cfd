@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls //wsl.localhost/gentoo/home/gentoowsl/yacht-cfd/)",
+      "Read(///wsl.localhost/gentoo/home/gentoowsl/yacht-cfd/**)",
+      "Bash(cat //wsl.localhost/gentoo/home/gentoowsl/yacht-cfd/projects/validate_naca0012/xfoil_input.dat | head -5 && echo \"---\" && wc -l //wsl.localhost/gentoo/home/gentoowsl/yacht-cfd/projects/validate_naca0012/xfoil_input.dat)",
+      "Bash(cat //wsl.localhost/gentoo/home/gentoowsl/yacht-cfd/projects/validate_naca0012/xfoil_stdout.log | head -120 | tail -45)",
+      "Read(///wsl.localhost/gentoo/home/gentoowsl/**)",
+      "Bash(python3 -c \"from pathlib import Path; p = Path\\('projects/validate_naca0012/xfoil_input.dat'\\); print\\(repr\\(p.resolve\\(\\)\\)\\)\")",
+      "Bash(python -c \"from pathlib import Path; print\\(repr\\(Path\\('foo'\\).resolve\\(\\)\\)\\)\")"
+    ]
+  }
+}
