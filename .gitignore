@@ -10,6 +10,7 @@ venv/
 # Generated geometry artefacts (regenerable from parameters.json)
 projects/
 *.bl
+*00.b
 # Future OpenFOAM cases and result outputs
 cases/
 results/
