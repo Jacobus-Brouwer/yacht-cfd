@@ -6,7 +6,7 @@ __pycache__/
 *.egg-info/
 .venv/
 venv/
-
+*.9
 # Generated geometry artefacts (regenerable from parameters.json)
 projects/
 *.bl
@@ -26,3 +26,4 @@ results/
 .idea/
 *.swp
 *~
+.claude/

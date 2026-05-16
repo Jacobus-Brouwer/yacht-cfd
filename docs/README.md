@@ -43,17 +43,17 @@ integral boundary-layer methods — consistent across all four sections,
 indicating the pipeline behaviour is physically correct rather than
 geometrically biased.
 
-![Validation against NACA Report 824](docs/validation.png)
+![Validation against NACA Report 824](/docs/validation.png)
 
 ## Example output
 
 Single-section verifier output:
 
-![NACA 2412 section](docs/2412.png)
+![NACA 2412 section](/docs/2412.png)
 
 3D extruded keel geometry with taper and twist:
 
-![Tapered, twisted keel](docs/keel.png)
+![Tapered, twisted keel](/docs/keel.png)
 
 ## Usage
 
