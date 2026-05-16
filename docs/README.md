@@ -21,3 +21,14 @@ validation; scaffold the OpenFOAM and VPP pipelines.
 
 ![NACA 2412 section](docs/2412.png)
 ![Tapered, twisted keel](docs/keel.png)
+
+ ## Validation
+
+   Generated NACA 0012 polar from `yacht-cfd`'s geometry generator, run
+   through XFOIL at Re=3×10⁶, compared against measurements from
+   NACA Report 824 (Abbott & von Doenhoff). Lift coefficient agrees
+   within experimental scatter across the operating range and into
+   pre-stall; drag coefficient shows the systematic XFOIL underprediction
+   typical of integral boundary layer methods.
+
+   ![Validation against NACA Report 824](docs/validation_naca0012.png)
