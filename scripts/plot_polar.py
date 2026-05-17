@@ -104,7 +104,7 @@ def plot_polar(rows: list[dict], naca: str | None, output: Path,
 
     # CL vs alpha
     ax = axes[0]
-    ax.plot(alpha, cl, color="#1f77b4", linewidth=1.8, label="XFOIL (this run)")
+    ax.plot(alpha, cl, color="#1f77b4", linewidth=2.4, label="XFOIL (this run)")
     if ref:
         ax.plot([p[0] for p in ref], [p[1] for p in ref],
                 "o", color="#d62728", markersize=6, label=ref_label)
@@ -118,7 +118,7 @@ def plot_polar(rows: list[dict], naca: str | None, output: Path,
 
     # CD vs alpha (note: log-scale Y looks nicer but keep linear for first version)
     ax = axes[1]
-    ax.plot(alpha, cd, color="#1f77b4", linewidth=1.8, label="XFOIL (this run)")
+    ax.plot(alpha, cd, color="#1f77b4", linewidth=2.4, label="XFOIL (this run)")
     if ref:
         ax.plot([p[0] for p in ref], [p[2] for p in ref],
                 "o", color="#d62728", markersize=6, label=ref_label)
@@ -130,7 +130,7 @@ def plot_polar(rows: list[dict], naca: str | None, output: Path,
 
     # CL vs CD (drag polar)
     ax = axes[2]
-    ax.plot(cd, cl, color="#1f77b4", linewidth=1.8, label="XFOIL (this run)")
+    ax.plot(cd, cl, color="#1f77b4", linewidth=2.4, label="XFOIL (this run)")
     if ref:
         ax.plot([p[2] for p in ref], [p[1] for p in ref],
                 "o", color="#d62728", markersize=6, label=ref_label)
