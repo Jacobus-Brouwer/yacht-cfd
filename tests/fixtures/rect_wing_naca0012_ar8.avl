@@ -1,0 +1,23 @@
+Test wing - rectangular NACA 0012, AR=8
+0.0                  | Mach
+0  0  0.0            | iYsym  iZsym  Zsym
+8.0  1.0  8.0        | Sref   Cref   Bref
+0.0  0.0  0.0        | Xref   Yref   Zref
+0.0                  | CDp
+
+SURFACE
+Main Wing
+10  1.0  20  1.0     | Nchord  Cspace  Nspan  Sspace
+
+YDUPLICATE
+0.0
+
+SECTION
+0.0  0.0  0.0  1.0  0.0    | Xle Yle Zle Chord Ainc
+NACA
+0012
+
+SECTION
+0.0  4.0  0.0  1.0  0.0    | Xle Yle Zle Chord Ainc
+NACA
+0012

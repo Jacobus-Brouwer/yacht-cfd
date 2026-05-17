@@ -1,0 +1,24 @@
+{
+  "planform": {
+    "root_chord_m": 0.30,
+    "tip_chord_m": 0.18,
+    "span_m": 1.40,
+    "sweep_deg": 0.0,
+    "twist_root_deg": 0.0,
+    "twist_tip_deg": 0.0
+  },
+  "sections": {
+    "root_naca": "0012",
+    "tip_naca": "0012",
+    "section_points": 200
+  },
+  "discretisation": {
+    "avl_spanwise_panels": 20,
+    "avl_chordwise_panels": 10
+  },
+  "reference": {
+    "S_ref_m2": 0.336,
+    "c_ref_m": 0.24,
+    "b_ref_m": 1.40
+  }
+}
