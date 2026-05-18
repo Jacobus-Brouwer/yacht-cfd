@@ -393,9 +393,12 @@ def main() -> None:
         print("No converged points.", file=sys.stderr)
         sys.exit(2)
 
-    writer = csv.DictWriter(sys.stdout, fieldnames=integrated[0].keys())
-    writer.writeheader()
-    writer.writerows(integrated)
+    out = args.root / args.project / "polar.csv"
+    with out.open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"Wrote {len(rows)} rows to {out}", file=sys.stderr)
 
 
 if __name__ == "__main__":
