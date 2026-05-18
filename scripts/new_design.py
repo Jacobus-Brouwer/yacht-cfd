@@ -25,6 +25,7 @@ from pathlib import Path
 # Allow running as `python scripts/new_design.py …` from the repo root
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from geometry.sections import NACA4, write_dat, write_stl
+from geometry.avl_surface import geometry_to_avl
 
 
 def create_design(name: str, params: dict, root: Path = Path("projects")) -> Path:
@@ -53,6 +54,8 @@ def create_design(name: str, params: dict, root: Path = Path("projects")) -> Pat
         params.get("twist", 0.0),
         folder / "geometry.stl",
     )
+    avl_text = geometry_to_avl(params)
+    (folder / "geometry.avl").write_text(avl_text)
     return folder
 
 
